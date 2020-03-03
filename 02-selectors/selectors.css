@@ -1,108 +1,129 @@
-/* 1 = Select everything in the document */
+/* 1 = Select everything in the document universal selector
+Universal selector */
 * {
  all: unset;
 }
 
 
-/* 2 = Select only table elements */
-table:only-of-type {
+/* 2 = Select only table elements element selector*/
+table {
   border-spacing: 0;
   border-collapse: collapse;
 }
 
 
-/* 3 = Select any element with a class value of `police` */
-* [attr="police"] {
+/* 3 = Select any element with a class value of `police` class selector*/
+.police {
   color: blue;
   background-color: red;
 }
 
 
-/* 4 = Select any `h1` element that is a descendent of the `header` element */
-.element h1 {
+/* 4 = Select any `h1` element that is a descendent of the `header` element Decendent combinator*/
+header h1 {
   font-size: 4rem;
   margin-bottom: 0;
 }
 
 
-/* 5 = Select only the `ul` elements that are children of the `nav` element */
-ul:only-child {
+/* 5 = Select only the `ul` elements that are children of the `nav` element Child combinator/Direct decendent combinator*/
+nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 
-/* 6 = Select only the first child paragraph within a `section` element */
-p:first-child {
+/* 6 = Select only the first child paragraph within a `section` element
+Pseudo-class selector for :first child
+Element selector Child combinator */
+section > p:first-child {
   font-size: 1.5rem;
 }
 
 
-/* 7 = Select any heading element */
-.element > headings {
+/* 7 = Select any heading element Element Selectors, as a list*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
   font-weight: normal;
 }
 
 
-/* 8 = Select all anchors that are also links */
+/* 8 = Select all anchors that are also links Link pseudo-class
+Element selector */
 a:link {
   text-decoration: underline;
 }
 
 
-/* 9 = Select any anchor that is hovered over with the mouse */
+/* 9 = Select any anchor that is hovered over with the mouse
+Hover pseudo-class
+Element selector*/
 a:hover {
   text-decoration: none;
 }
 
 
-/* 10 = Select only the element with ID value equal to `captain` */
-:only-of-type#captain {
+/* 10 = Select only the element with ID value equal to `captain`
+ID Selector */
+#captain {
   border: 5px solid gold;
   border-radius: 5px;
 }
 
 
-/* 11 = Select all paragraph elements that have a class value of `hidden` */
+/* 11 = Select all paragraph elements that have a class value of `hidden`
+Element selector
+Class selector */
 p.hidden {
   display: none;
 }
 
 
-/* 12 = Select all form elements that have a method attribute set to `POST` */
-[POST]
+/* 12 = Select all form elements that have a method attribute set to `POST`
+Attribute selector
+Element slector */
+form[method="POST"]
   {
   box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 }
 
 
-/* 13 = Select any element that has a `required` attribute defined */
-*:required {
+/* 13 = Select any element that has a `required` attribute defined
+Attribute selector (without a value)*/
+[required] {
   border-color: red;
 }
 
 
-/* 14 = Select any sibling paragraph elements that are preceeded by an `h3` */
-p> h3 {
+/* 14 = Select any sibling paragraph elements that are preceeded by an `h3`
+General sibling combinator
+Element selector */
+h3 ~ p {
   color: #66F;
 }
 
 
-/* 15 = Select any sibling paragraph elements that directly follow an `h3` */
-h3 ~p {
+/* 15 = Select any sibling paragraph elements that directly follow an `h3`
+Adjecent sibling combinator
+Element selector */
+h3 + p {
   font-size: 1.5rem;
 }
 
 
 /* 16 = Select every cell within each odd table row */
-:not(tr) {
+tr:nth-last-of-type(odd) > * {
   background-color: rgba(0,0,0,.1);
 }
 
 
 /* 17 = Select any `img` element that doesn't have a `alt` attribute */
-img:not([attr="alt"]) {
+img:not([alt]) {
   border: 5px solid red;
 }
 
