@@ -1,6 +1,6 @@
 /* 1 = Select everything in the document */
 * {
- fill: unset;
+ all: unset;
 }
 
 
