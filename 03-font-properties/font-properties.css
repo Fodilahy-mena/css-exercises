@@ -1,4 +1,4 @@
- 
+
 /*
   Property name
   Property description
@@ -23,7 +23,7 @@
 }
 
   /*
-  - `font-weight` property is specifying the font weight of the text and sets the weight or boldness of the font.
+  - `font-weight` property is specifying the font weight of the text and sets the weight or boldness of the font/how thick the font is.
   For example;
 */
   h1 {
@@ -50,7 +50,7 @@
 }
 
   /*
-- `font-variant` CSS property sets the variation of the font family.
+- `font-variant` CSS property sets the variation of the font family optional features.
 As seen in this example;
 */
 p {
@@ -58,7 +58,7 @@ p {
 }
 
 /*
-- `font-stretch` CSS property selects a normal, condensed, or expanded face from a font.
+- `font-stretch` CSS property selects a normal, condensed, or expanded face from a font.Makes the text narrower or wider
 An example;
 */
 .font-stretch {
@@ -67,7 +67,7 @@ An example;
 }
 
 /*
-- `font-size-adjust` property preserves the readability of text when font fallback occurs and it is specifying that font size should be chosen based on the height of lowercase letters rather than the height of capital letters.
+- `font-size-adjust` property preserves the readability of text no matter how  when font fallback occurs and it is specifying that font size should be chosen based on the height of lowercase letters rather than the height of capital letters.
 One example;
 */
 p {
@@ -100,7 +100,7 @@ p {
 }
 
 /*
-- `text-align` CSS property sets the horizontal alignment of the inline content like text and images in its parent block element such as heading or paragraph.
+- `text-align` CSS property sets the horizontal alignment/position of the inline content like text and images in its parent block element such as heading or paragraph.
 
 One example;
 */
@@ -170,7 +170,7 @@ span {
 }
 
 /*
-- `white-space` property specifies how white-space such as spaces, tabs, and newline characters are handled inside the elements.
+- `white-space` property specifies how white-space such as spaces, tabs, and newline characters are handled inside the elements, how the white space controle behave.
 Example;
 */
 p {
