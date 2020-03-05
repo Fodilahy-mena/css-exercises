@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #section_sans_serif {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif , sans-serif;
 }
 
 #section_serif {
@@ -9,7 +9,7 @@
 }
 
 #section_monospace {
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace ,monospace;
 }
 
 #section_fantasy {
@@ -59,8 +59,7 @@ h6 {
   margin-block-end: 1em;
   font-variant: small-caps;
 }
-.example
-p.intro {
+.example .intro {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 1em;
@@ -73,8 +72,7 @@ p {
   margin: 1em;
 }
 
-.example
-small ~ p {
+.example p small {
   font-size: 0.75rem;
   font-weight: 400;
   margin: 1em;
