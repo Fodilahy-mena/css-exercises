@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+#section_sans_serif {
+  font-family: sans-serif;
+}
+
+#section_serif {
+  font-family: serif;
+}
+
+#section_monospace {
+  font-family: monospace;
+}
+
+#section_fantasy {
+  font-family: fantasy;
+}
+
+#section_cursive {
+  font-family: cursive;
+}
+
+.example
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-block-end: 1em;
+  text-shadow: 4px 4px 4px rgb(255, 0, 170);
+}
+.example
+h2 {
+  font-size: 2rem ;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+.example
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+
+.example
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+.example
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+.example
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+  font-variant: small-caps;
+}
+.example
+p.intro {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 1em;
+  letter-spacing: 0.1em;
+}
+.example
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1em;
+}
+
+.example
+small ~ p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 1em;
+}
+
+
