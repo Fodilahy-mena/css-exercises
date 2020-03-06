@@ -1,8 +1,76 @@
-* {
+
   /*
     Property name
     Property description
   */
     /* Property example with a value */
 
+  /*
+  - `color` property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.
+  */
+    .example {
+      color: lightgrey;
+    }
+  /*
+  - `background-color`  CSS property sets the background color of an element.
+    Example;
+  */
+    .example {
+      background-color: lawngreen;
+    }
+  /*
+  - `background-image` property sets one or more background images on an element.
+    Example;
+  */
+  .example {
+    background-image: initial;
+  }
+  /*
+  - `background-repeat`  sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.
+    Example;
+  */
+    .example {
+      background-repeat: repeat-x;
+    }
+  /*
+  - `background-position`  property sets the initial position for each background image. The position is relative to the position layer set by background-origin.
+    Example;
+  */
+   .example {
+     background-position: top;
+   }
+  /*
+  - `background-attachment`  CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.
+    Example;
+  */
+   .example {
+     background-attachment: scroll;
+   }
+  /*
+  - `background-clip` sets whether an element's background extends underneath its border box, padding box, or content box.
+    Example;
+  */
+   .example {
+     background-clip: border-box;
+   }
+  /*
+  - `background-origin` sets the background's origin: from the border start, inside the border, or inside the padding.
+    Example;
+  */
+   .example {
+     background-origin: content-box;
+   }
+  /*
+  - `background-size` property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
+    Example;
+  */
+    .example {
+      background-size: contain;
+    }
+  /*
+  - `box-shadow`  adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
+    Example;
+  */
+  .example {
+    box-shadow: rgba(red, green, blue, alpha);
   }
