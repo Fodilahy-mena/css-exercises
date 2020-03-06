@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.dory {
+  background-image: url('../images/bubble.png'),
+  url('../images/crab.png'),
+  url('../images/coral-reef.png'),
+  linear-gradient(to bottom, rgb(5, 63, 252), rgba(255, 255, 255, 0));
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 8cm;
+}
+.lu-seal {
+  background-image: url('../images/grass-tile.png'), linear-gradient(to bottom, rgb(5, 63, 252), rgba(9, 131, 231, 0.938));
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 35cm;
+}

@@ -23,7 +23,7 @@
     Example;
   */
   .example {
-    background-image: initial;
+    background-image: linear-gradient();
   }
   /*
   - `background-repeat`  sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.
