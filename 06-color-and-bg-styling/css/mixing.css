@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color:  rgb(199, 199, 197);
+  background-color:  rgb(197, 197, 187);
 }
 .dory {
   background-image: url('../images/bubble.png'),
@@ -29,7 +29,7 @@ body {
   background-image: url('../images/palm-2.png'),
   url('../images/grass-left.png'),
   url('../images/grass-clump.png'),
-  linear-gradient(to bottom, rgb(253, 216, 4),28%, rgb(3, 155, 36),38%, rgb(4, 49, 247),90%, green);
+  linear-gradient(to bottom, rgb(255, 176, 6),28%, rgb(3, 155, 36),38%, rgb(4, 49, 247),90%, green);
   background-repeat: no-repeat, repeat-x, repeat-x;
   background-position: bottom left, bottom, top;
   background-size: 10cm, 10cm, 10cm, 37cm;
