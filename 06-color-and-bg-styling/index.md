@@ -1,4 +1,4 @@
-# CSS exercise 06: Mixing colours and backgrounds
+ # CSS exercise 06: Mixing colours and backgrounds
 
 By now you should have realised that colours can be solid (i.e. not see-through), or various levels of transparent (you can see through them).
 

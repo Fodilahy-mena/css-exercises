@@ -1,17 +1,37 @@
 @charset "UTF-8";
-
+body {
+  background-color:  rgb(199, 199, 197);
+}
 .dory {
   background-image: url('../images/bubble.png'),
   url('../images/crab.png'),
   url('../images/coral-reef.png'),
-  linear-gradient(to bottom, rgb(5, 63, 252), rgba(255, 255, 255, 0));
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 8cm;
+  linear-gradient(to bottom, rgb(5, 63, 252), rgba(170, 167, 167, 0.986));
+  background-repeat: repeat-x, no-repeat, repeat-x;
+  background-position: top left, bottom left, bottom;
+  background-size: 4cm, 8cm, 20cm;
+}
+.henry {
+  background-image:
+                    url('../images/grass-left.png'),
+                    url('../images/beach-ball.png'),
+                    url('../images/grass-clump.png'),
+                    url('../images/palm-2.png'),
+                    url('../images/palm.png'),
+                    url('../images/grass-tile.png'),
+                    url('../images/sun.png'),
+  linear-gradient(to bottom, rgb(252, 215, 5),30%, rgb(0, 0, 255),40%, green);
+  background-repeat: no-repeat;
+  background-position: bottom left,bottom, bottom right, bottom left, bottom right, bottom right 10px, top left;
+  background-size: 35cm, 6cm, 15cm, 25cm, 20cm, 35cm, 6cm;
 }
 .lu-seal {
-  background-image: url('../images/grass-tile.png'), linear-gradient(to bottom, rgb(5, 63, 252), rgba(9, 131, 231, 0.938));
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 35cm;
+  background-image: url('../images/palm-2.png'),
+  url('../images/grass-left.png'),
+  url('../images/grass-clump.png'),
+  linear-gradient(to bottom, rgb(253, 216, 4),28%, rgb(3, 155, 36),38%, rgb(4, 49, 247),90%, green);
+  background-repeat: no-repeat, repeat-x, repeat-x;
+  background-position: bottom left, bottom, top;
+  background-size: 10cm, 10cm, 10cm, 37cm;
 }
+
