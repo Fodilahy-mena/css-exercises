@@ -5,12 +5,30 @@
 */
   /* Property example with a value */
 }
-
+/* `Opacity` property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+*/
+  /*Example*/
+    p {
+      opacity: 0.2;
+  }
+ /* Barely see the text over the background */
+ /*
+  `Display` property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+ */
+ /*Example;*/
+  .henry {
+    display: flex;
+  }
+  /* `Visibility` property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a <table>.
+ /*Example;*/
+  header {
+    visibility: hidden;
+  }
 /*
   Questions
   =======================
 
-  - What is the difference between `opacity` and a `background-color` that is semi-transparent?
+  - What is the difference between `opacity` and a `background-color` that is semi-transparent? Background color sets the background of an element wheras the opacity property cover the text.
   - What is the difference between `display: none;` and `visibility: hidden;`?
   - Why would we use `visibility: visible;`?
 
