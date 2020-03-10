@@ -28,9 +28,11 @@
   Questions
   =======================
 
-  - What is the difference between `opacity` and a `background-color` that is semi-transparent? Background color sets the background of an element wheras the opacity property cover the text.
-  - What is the difference between `display: none;` and `visibility: hidden;`?
-  - Why would we use `visibility: visible;`?
+  - The difference between `opacity` and a `background-color` that is semi-transparent is the background color defines the color of the element's background wheras opacity makes the element's background and the element more tranparent.
+
+  - The difference between `display: none;` and `visibility: hidden; is that the in display none, there is no space allocated for it between the other tags wheras the visibility hidden has a space allocated for it on the page.
+
+  - We would use `visibility: visible;` because it can also hide rows and columns in a table
 
 */
 
