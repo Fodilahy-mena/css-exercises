@@ -1,0 +1,20 @@
+
+
+li:first-child {
+  visibility: visible;
+}
+li:nth-of-type(2n) {
+  visibility: hidden;
+}
+li:nth-of-type(3) {
+  visibility: hidden;
+}
+tr:nth-of-type(2n) {
+  display: none;
+}
+span {
+  display: none;
+}
+td[data-bg-color=blue] {
+  display: none;
+}
