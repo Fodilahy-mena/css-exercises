@@ -3,7 +3,6 @@
   background-color:  rgb(197, 197, 187);
 }
 */
-/*
 .dory figure::after {
   content: '';
   width: 30px;
@@ -17,11 +16,17 @@
                     linear-gradient(to bottom,lightblue 30%, rgb(141, 141, 250) 60%, rgb(238, 208, 153));
   width: 1000px;
   height: 2000px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: center, bottom left, bottom;
-  background-size: 100px, 300px, 400px;
+  background-repeat:no-repeat,
+                    no-repeat,
+                    repeat-x;
+  background-position:center,
+                      bottom left,
+                      bottom;
+  background-size:100px,
+                  300px,
+                  400px;
 }
-*/
+/*
 .dory {
   background-image: url('../images/bubble.png'),
   url('../images/crab.png'),
@@ -56,6 +61,6 @@
   background-position: bottom left, bottom, top;
   background-size: 10cm, 10cm, 10cm, 37cm;
 }
-
+*/
 
 
