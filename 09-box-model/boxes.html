@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The box moeld</title>
+  <title>The box model</title>
   <link rel="stylesheet" href="boxes.css">
 </head>
 <body>
@@ -12,13 +12,25 @@
     </h1>
   </header>
   <main>
-    <div>
+    <h2>
+      What is a <dfn>box</dfn> ?
+    </h2>
+    <p>
+      A <dfn>box</dfn> is a square or rectangular figure that has a name value of width and height, also contains text, image, etc.
+    </p>
+    <h2>
+      A <dfn>Box model</dfn>
+    </h2>
+    <p>
+      A <dfn>box model</dfn> is a box that wraps every single html element and it shows all of different parts of a box that it contains such us margin, border, padding and content. Those bunch of parts of a box work together gives us the box model. Each parts of box has width and height properties htat have the same starting value (0px) from the top left angle of each box.
+    </p>
+    <div id="margin">
       Margin
-      <div>
+      <div id="border">
         Border
-        <div>
+        <div id="padding">
           padding
-          <div>
+          <div id="content">
             Content
           </div>
         </div>
