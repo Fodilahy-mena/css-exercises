@@ -1,5 +1,14 @@
-
-
+/* nav li {
+  visibility: hidden;
+}
+nav li:first-child {
+  visibility: visible;
+}
+or
+nav li:not(:first-child) {
+  visibility: hidden;
+}
+*/
 li:first-child {
   visibility: visible;
 }
@@ -13,9 +22,13 @@ tr:nth-of-type(2n) {
   display: none;
 }/* or use tr:nth-child(2n) {
   display:none; */
-span {
-  display: none;
+
+td span, [data-bg-color=yellow],
+        [data-bg-color=blue] {
+        display: none;
 }
+*/
+/*
 td[data-bg-color=blue] {
   display: none;
 }/* or use tr:last-child > td:nth-last-of-type(2n+1) {
