@@ -5,3 +5,26 @@
   */
     /* Property example with a value */
   }
+  /* A `box` is a square or rectangular figure that has a name value of width and height, also contains text, image, etc.*/
+
+  /* A box model is a box that wraps every single html element and it shows all of different parts of a box that it contains such us margin, border, padding and content. Those bunch of parts of a box work together gives us the box model. Each parts of box has width and height properties htat have the same starting value (0px) from the top left angle of each box. */
+  html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  h1 {
+    font-family: serif;
+    color: darkolivegreen;
+  }
+
+
+div {
+  width: 50px,100px,150px,200px;
+  border: 2px solid gray;
+  padding: 35px;
+  margin: 10px;
+  color: red;
+}
