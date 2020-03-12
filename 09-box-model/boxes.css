@@ -8,18 +8,34 @@
   /* A `box` is a square or rectangular figure that has a name value of width and height, also contains text, image, etc.*/
 
   /* A box model is a box that wraps every single html element and it shows all of different parts of a box that it contains such us margin, border, padding and content. Those bunch of parts of a box work together gives us the box model. Each parts of box has width and height properties htat have the same starting value (0px) from the top left angle of each box. */
-  html {
+  /*html {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+  }*/
+  html {
+    font-size: 16px;
+    background: linear-gradient(to right, rgb(181, 245, 176) 20%,white 50%, rgba(255, 174, 174, 0.986));
   }
   h1 {
-    font-family: serif;
-    color: darkolivegreen;
+    color: green;
+    text-shadow: 2px 2px 2px rgb(17, 0, 255);
   }
-
+  h2 {
+    color: red;
+  }
+ p {
+   color: darkslategrey;
+ }
+  img {
+    width: 500px;
+    height: 500px;
+  }
+ul {
+  background: linear-gradient(to bottom, rgb(243, 6, 243) 30%, yellow 50%, rgb(12, 228, 243));
+}
 /*
 div {
   height: 25px,50px,75px,100px;
@@ -28,20 +44,5 @@ div {
   padding: 35px;
   margin: 10px;
   color: red;
-}*/
-#margin {
-  height: 200px;
-  width: 200px;
-  border: 2px solid gray;
-  padding: 35px;
-  margin: 10px;
-  color: red;
 }
-#border {
-  height: 150px;
-  width: 200px;
-  border: 2px dotted gray;
-  padding: 35px;
-  margin: 5px;
-  color: red;
-}
+*/

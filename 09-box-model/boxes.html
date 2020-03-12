@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,36 +7,102 @@
   <link rel="stylesheet" href="boxes.css">
 </head>
 <body>
+  <section>
   <header>
     <h1>
       Box model
     </h1>
   </header>
-  <main>
-    <h2>
-      What is a <dfn>box</dfn> ?
-    </h2>
-    <p>
-      A <dfn>box</dfn> is a square or rectangular figure that has a name value of width and height, also contains text, image, etc.
-    </p>
-    <h2>
-      A <dfn>Box model</dfn>
-    </h2>
-    <p>
-      A <dfn>box model</dfn> is a box that wraps every single html element and it shows all of different parts of a box that it contains such us margin, border, padding and content. Those bunch of parts of a box work together gives us the box model. Each parts of box has width and height properties htat have the same starting value (0px) from the top left angle of each box.
-    </p>
-    <div id="margin">
-      Margin
-      <div id="border">
-        Border
-        <div id="padding">
-          padding
-          <div id="content">
-            Content
-          </div>
-        </div>
-      </div>
+    <div>
+      <dl>
+        <h2>What is a <dfn>box?</dfn></h2></dt>
+        <dd>
+          A <dfn>box</dfn> is described as a square or rectangular figure that has a name value of width and height, also contains text, image, etc.
+       </dd>
+      <dt>
+        <h2>An essay of a <dfn>box model</dfn>
+        </h2>
+      </dt>
+      <dd>
+          A <dfn>box model</dfn> is a box that wraps every single html element and it shows all of different parts of a box that it contains such us margin, border, padding and content. Those bunch of parts of a box work together gives us the box model. Each parts of box has width and height properties htat have the same starting value (0px) from the top left angle of each box.
+      </dd>
+      </dl>
     </div>
-  </main>
+  </section>
+  <section>
+    <h2>
+      A diagram of a box model
+    </h2>
+    <img src="diagram.jpg" alt="sample image of a box madel">
+  </section>
+  <section>
+    <h2>
+      Description
+    </h2>
+    <h3>
+      Keywords:
+    </h3>
+    <div>
+      <ul>
+        <li>
+          A<dfn> content box</dfn>
+        </li>
+            is the box which located at the center of the box model. It contains text, image, or other media content in the element.
+        <li>
+          A<dfn> padding box</dfn>
+        </li>
+          is the box that wraps the content box, so the space between box's content is called padding.
+        <li>
+          A<dfn> border box </dfn>
+        </li>
+          is a box which wraps the padding and the content box.
+      </ul>
+    </div>
+    <h3>
+      Properties:
+    </h3>
+    <div>
+      <ul>
+        <li>
+          A<dfn> border;</dfn>
+        </li>
+          Border is a shorthand for border width, border style, and border color. Boreder property allows us to contorle or specify for an element's height and width.
+        <li>
+          A<dfn> margin;</dfn>
+        </li>
+          Margin property is a shorthand for margin top, margin right, margin left and margin bottom. It gives an accessibility to specify the margin space on each sides of an element.
+        <li>
+          A<dfn> padding;</dfn>
+        </li>
+          Padding property behaves like a margin property but it is for specifying the padding space on each sides of an element. It is a shorthand for padding top, padding left, padding right, and padding bottom.
+        <li>
+          A<dfn> display;</dfn>
+        </li>
+          According to <b>MDN display property,</b> it defines whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+        <li>
+          A<dfn> box sizing;</dfn>
+        </li>
+        Box sizing property is taking care of how the total width and height of an element is calculated.
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h2>
+      Answer of the questions
+    </h2>
+    <ol>
+      <li>
+        When two differently sized margins of two different boxes collide, they collaps and combine together also the bigest of the two margin which the content takes.
+      </li>
+      <li>
+        The formula for working out an element's visual width is border plus margin two times plus the content. It is different from using box-sizing: border-box; on the element because the box-sizing:border-box; only takes whatever value is in the width element.
+      </li>
+      <li>
+        The difference between `display` values `inline`, `inline-block`, and `block` is that inline block allows us to set a width and height on the element and in display inline, top and bottom margins seem to be not respected wheras in display inline block, they are.
+      </li>
+    </ol>
+  </section>
+
 </body>
 </html>
+
