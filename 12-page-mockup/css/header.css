@@ -1,0 +1,35 @@
+
+
+
+.header {
+  background-image: url('../images/bg_desktop.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 300px;
+
+}
+h1 a {
+  color: white;
+  background-position: top left;
+  text-decoration: none;
+}
+div a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: right;
+}
+  .lost {
+    text-align: center;
+    color: white;
+    margin-top: 6rem;
+}
+
+#link {
+ text-align: right;
+}
+h1 {
+  margin-top: 0;
+}

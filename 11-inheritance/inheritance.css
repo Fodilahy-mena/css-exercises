@@ -45,4 +45,12 @@ volume
 white-space
 widows
 word-spacing
+
+
+The difference between the `currentColor` and `inherit` keywords when used with colour values is that the currentColor is expecting that it has one main limiting condution- only used where a value is expected, if a property does not accept a value, it will not accept currentColor as a value and for inherited keyword, it can be applied to any CSS property, including the CSS shorthand all.
+
+
+The revert, initial, and unset keyword values allow us a lot of shade in setting defaults for properties. Although they are not all universally supported yet, they can be useful to know and understand their differences.
+
+There might not be any danger of using inherit as a value if the certain properties are inheritable but it may have any danger if we use it with those unheritable properties, like margins, padding, borders and backgrounds. And so with revert, initial and unset properties- they behave as using inherit.
 */
