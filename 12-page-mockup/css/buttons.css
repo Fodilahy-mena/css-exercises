@@ -1,0 +1,15 @@
+.botton {
+  display: inline-block;
+  padding: .5rem 1rem;
+  color: #fff;
+  background-color: blue;
+  position: absolute;
+  padding-top: 1rem;
+  text-align: right;
+  /*border-radius: .25rem;
+  font-weight: 700;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform .1s ease-out;
+  text-align: right;
+}

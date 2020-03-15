@@ -2,4 +2,8 @@ img {
   background-position: right;
   border-radius: 2rem;
   width: 2rem;
+  border: 1rem;
+}
+footer {
+  text-align: center;
 }
