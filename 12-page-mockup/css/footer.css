@@ -1,9 +1,27 @@
-img {
-  background-position: right;
-  border-radius: 2rem;
-  width: 2rem;
-  border: 1rem;
-}
+/* Let the footer element manage the spacing.
+We'll use display: inline for all descendents so that we can use inlie text-align*/
 footer {
+  border-block-start: 1px rgba(200, 202,220) solid;
   text-align: center;
+  padding-block-start: 7.5rem;
+  padding-block-end: 7.5rem;
+}
+li {
+  list-style-type: none;
+}
+/* Swich off default list styles*/
+footer ul {
+  list-style: none;
+  margin-block-end: 2rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+/*Make all*/
+footer li {
+  display:inline;
+  margin: 0 0.5rem;
+}
+footer li:not(:first-child):not(:last-child) {
+  margin-inline-start: 2rem;
+  margin-inline-end: 2rem;
 }
