@@ -15,11 +15,13 @@ h1 a {
   background-position: top left;
   text-decoration: none;
 }
-div a {
+section > nav a {
+  display: inline;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   text-align: right;
+  padding-block-start: 1rem;
 }
   .lost {
     text-align: center;
@@ -27,9 +29,8 @@ div a {
     margin-top: 6rem;
 }
 
-#link {
- text-align: right;
-}
 h1 {
   margin-top: 0;
+  line-height: 1;
+  padding-block-start: 1rem;
 }

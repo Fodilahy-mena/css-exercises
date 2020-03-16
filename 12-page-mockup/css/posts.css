@@ -3,9 +3,17 @@ li a {
   text-decoration: none;
 }
 
+
 ol {
   margin: 10px 50px 20px;
   margin-left: 10%;
   margin-right: 10%;
+}
+.expore {
+  border-block-start: 1px rgba(200, 202,220) solid;
+  text-align: center;
+}
+.beleave {
+  border-block-start: 1px rgba(200, 202,220) solid;
 }
 
