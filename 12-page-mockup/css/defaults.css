@@ -12,6 +12,7 @@ body {
   width: 800px;
   height: 830px;
   margin: 8px;
+  font-family: sans-serif;
 }
 body > nav ul {
   list-style: none;
