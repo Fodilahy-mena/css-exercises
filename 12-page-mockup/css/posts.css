@@ -16,4 +16,6 @@ ol {
 .beleave {
   border-block-start: 1px rgba(200, 202,220) solid;
 }
-
+.expore a {
+  color: blue;
+}
