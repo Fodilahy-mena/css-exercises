@@ -1,0 +1,52 @@
+/* ## Psedo elements:
+
+We need a content property for a pseudo-element to work
+*/
+/*
+What *functions* can we use in that property's value?
+*/
+/*
+- The various pseudo-elements are ::first-letter (formerly :first-letter)
+                                  ::first-line (formerly :first-line)
+                                  ::before (formerly :before)
+                                  ::after (formerly :after)
+*/
+/*
+ We use pseudo-elements because they allow users style a specific part of an element's content.
+*/
+
+
+/* ## Counters:
+
+We use nesting counters or nesting ordered list to *count* in CSS
+*/
+/*
+We use counter-reset:chapter-count 0; to reset a counter in css
+*/
+/*
+Counters are useful for numbering the headings in a webpage.
+*/
+
+
+/* ## Lists:
+
+There are many properties that related to lists in css such us:
+
+list-style
+list-style-image
+list-style-position
+list-style-type
+color
+background color
+font family
+font size
+text align
+display
+
+*/
+/*
+There are only tree types of bullet styles, and they are full black cercle, empty cercle, and the black square bullets.
+*/
+/*
+Can any group of elements be styled to look like a list
+*/
