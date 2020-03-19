@@ -19,36 +19,36 @@
     …
 */
 body {
-  counter-reset: section;
+  counter-reset: major-clause;
 
 }
 h3 {
   list-style: none;
 }
 h3::before {
-  counter-increment: section;
-  content: counter(section) ".";
+  counter-increment: major-clause;
+  content: counter(major-clause) ".";
 }
 h4 {
-  counter-increment: h4;
+  counter-increment: clause;
 }
 h4::before {
-  content: counter(section) "." counter(h4) ".";
+  content: counter(major-clause) "." counter(clause) ".";
 }
- ol li{
-  counter-increment: alphabeticList;
+ol > li{
+  counter-increment: list;
   list-style: none;
 }
 
-ol li::before {
-  content: counter(section) "." counter(h4) "." counter(alphabeticList, lower-alpha) ".";
+ol > li::before {
+  content: counter(major-clause) "." counter(clause) "." counter(list, lower-alpha) ".";
 }
-li ol li{
+li > ol > li {
   counter-increment: nested-list;
   list-style: none;
 
 }
-li ol li::before {
-  content: counter(section) "." counter(h4) "." counter(alphabeticList, lower-alpha) "." counter(nested-list, lower-roman) ".";
+li > ol > li::before {
+  content: counter(major-clause) "." counter(clause) "." counter(list, lower-alpha) "." counter(nested-list, lower-roman) ".";
 }
 

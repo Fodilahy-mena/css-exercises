@@ -48,5 +48,5 @@ display
 There are only tree types of bullet styles, and they are full black cercle, empty cercle, and the black square bullets.
 */
 /*
-The group of elements styled to look like a list are table element inclouding (tr td dd), pre, p, and
+The group of elements styled to look like a list are many but you have to use display: list-item; and list-type: disc/circle/square.
 */
