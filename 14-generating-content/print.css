@@ -7,3 +7,17 @@
 @media print {
 
 }
+a::after {
+  content: " [" attr(href)"]";
+}
+abbr[title]::after {
+content: " [" attr(title)"]";
+}
+blockquote[cite]::after {
+content: attr(cite);
+}
+/* Pseudo elements don't work with void elements like this example;
+img[src]::before {
+  content: " [" attr(alt/src)"]";
+}
+*/
