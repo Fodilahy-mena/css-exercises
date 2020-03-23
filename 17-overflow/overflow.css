@@ -1,0 +1,44 @@
+/*
+
+1)`overflow`
+  a) Overflow default values are: auto, visible, hidden, clip, and scroll.
+
+  b)  We would use this property because sometimes, the content or a part of a webpage doesn’t fit and exceeds the borders of its container. In that case, CSS provides us with a solution with its overflow property so we can handle the overflow problem.
+
+  c) Overflow property is useful for clipping, hiding, or scrolling an element's content when the content is bigger than its own specified area.
+
+  d) Note that the overflow property only works for block elements with a specified height.
+
+
+2) `clip`
+  a) Clip default value is auto.
+
+  b) We use this property to creates a rectangular window that shows a part of an element.
+  c) And it is useful for creating a mask through which a section of an image is displayed.
+  d) Clip property won't work for overflow:visible;
+
+
+3)`clip-path`
+  a) Clip-path default values are none, circle, url() in an svg, polygon or numbers.
+
+  b) we use clip-path to create a clipping region which sets what part of an element should be shown.
+  c) It is useful for specifying which part of the picture or the content to be shown instead of showing the complete area.
+
+  d) We need to set a clip property before to make the clip-path property works effectivelly.
+
+
+4)`text-overflow: ellipsis`
+  a) Text overflow values are: clip, ellipsis.
+
+  b) We would use it when the text can't fit inside of the content element.
+
+  c) It is useful for decreasing the amount of text displayed. If there is not enough space to display the ellipsis, it is clipped.
+
+  d) We need a clip property to be set before text-overflow: ellipsis works properly.
+
+  Overflow:auto is the browser's default way to handle contents that are larger than its container
+
+  An ellipsis a series of dots (...) that usually indicates an international omission of a word or a senteence wheras ellipse doesn't have anything to do with that but it is a regular oval shape with clip-path as a value.
+
+  What makes `text-overflow` different from the other properties is that it only work with text.
+*/

@@ -1,0 +1,31 @@
+body {
+  display: table;
+  border: 1px solid;
+  width: 650px;
+
+}
+h1 {
+  padding-left: 5px;
+}
+footer {
+  padding: 5px;
+}
+
+section {
+  display: table-row;
+}
+h2 {
+  display: table-cell;
+  padding-left: 7rem;
+  table-layout: fixed;
+  vertical-align: middle;
+
+}
+section p {
+  display: table;
+  word-break: break-word;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+
+}

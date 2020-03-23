@@ -9,7 +9,7 @@ table-layout: auto/fixed; (or we can use global values (inherit/initial/unset))
 `border-spacing` propery is used to define the distence between the borders next to (adjacent) table cells. Only applies when the border-colaps is separate. It has many values that you can use as in this example:
 
 table {
-  border-spacing: 0px/rem; (depends on how many spaces do you want the length should be you      can use also (horizontal length) and (vertical length), there also the global values))
+  border-spacing: 2px/rem; (depends on how many spaces do you want the length should be you      can use also (horizontal length) and (vertical length), there also the global values))
 */
 /*
 `border-collapse` property sets whether cells inside a <table> have shared or separate borders.
@@ -21,8 +21,8 @@ table {
 */
 /*
 `caption-side` property puts the content of a table's <caption> on the specified side. The values are relative to the writing-mode of the table.
-The values are: top, bottom, left, right, top-outside, bottom-outside, and the global values.
-
+The values are: top, bottom,or non standard value: left, right, top-outside, bottom-outside, and the global values.
+capyion is a sammary of the table
 Example:
 table {
   caption-side: top;
@@ -50,7 +50,7 @@ table {
 - `table-column-group`
 - `table-column`
 - `table-caption`
-This values correspond to table element, tr, th, and td element.
+This values correspond to table element.
 */
 
 /*
@@ -60,15 +60,14 @@ This values correspond to table element, tr, th, and td element.
 `border-spacing` property only can work when the value of border-colapse property is sepparate, otherwise there won't be any spaces between the borders if the borders are collapsed with a collapse value.
 */
 /*
-
+if you have a tabular relationship, you can use an html table.
+*/
+/*
+The difference bettween table-layout fixed and table-layout auto is that with auto, the contennt in the cells is unbreakable by seting it wheras with fixed one, (distribute the column 50/50) if no widths are present on the first row, the column widths are divided equally across the table according to content of table and it can be broken.
 */
 
 /*
-The difference bettween table-layout fixed and table-layout auto is that with auto, the contennt in the cells is unbreakable by seting it wheras with fixed one, if no widths are present on the first row, the column widths are divided equally across the table according to content of table and it can be broken.
-*/
-
-/*
-We can't use use `border-spacing` and other table-like properties on non-table elements
+We can use use `border-spacing` and other table-like properties on non-table elements as we see in exersise 16 but all of those non-table element have to use display: table;
 */
 /*
 `empty-cells` only works effectively when the border-collapse value is separate, because otherwise, if the border model is collapsed, the borders of cells would be joined and shared and hence their borders would be shared, and it won’t be possible to hide the borders of one cell without hiding those of the adjacent cells.
