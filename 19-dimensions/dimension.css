@@ -1,0 +1,53 @@
+
+/*
+- `min-width`:
+min-width default values are percentage value, length value, max-content, min-content and fit-content.
+*/
+
+/*
+- `max-width`:
+max-width default values are percentage value, length value, none, max-content, min-content and fit-content.
+*/
+
+/*
+- `min-height`
+min-height default values are percentage value, length value, max-content, min-content and fit-content.
+*/
+
+/*
+- `max-height`:
+max-height default values are percentage value, length value, none, max-content, min-content and fit-content.
+*/
+
+/*
+Do these default values change if the element is a block-like or an inline-like element?
+*/
+
+/*
+If a `min-width` value is greater than a `width` value what happens is that the value of the min-width will apply.
+*/
+
+/*
+If a `max-width` value is less than a `width` value what happens is that the actual width will be the max-width, in other word the max-width will apply.
+*/
+
+/*
+If min-width value is larger than max-width, then the min-width value will be taken as the width for the element.
+*/
+
+/*
+When `width`s are applied to table cells, and the content inside these cells doesn't fit, the content will go down vertically.
+*/
+
+/*
+The deal with `height` and percentage values
+*/
+/*
+div {
+  min-width: 20rem;
+  max-width: 80vw;
+}
+div {
+  width: fit-content;
+}
+
