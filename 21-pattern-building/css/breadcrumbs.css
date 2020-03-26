@@ -1,0 +1,25 @@
+@import "breadcrumbs.css";
+
+.breadcrumb ol li {
+  display: inline;
+}
+
+.breadcrumb li::before {
+  border-inline-start: 10px solid black;
+  border-inline-end: 10px solid transparent;
+  border-block-start: 10px solid transparent;
+  border-block-end: 10px solid transparent;
+  position: absolute;
+  content: " ";
+}
+
+.breadcrumb li:first-child::before {
+  content: "";
+  border: none;
+}
+li .a11y {
+  margin-inline-start: 1rem;
+}
+.breadcrumb > ol > li {
+  text-decoration: none;
+}

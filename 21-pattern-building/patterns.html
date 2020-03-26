@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <title>Patterns</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/progress.css">
   </head>
   <body>
     <header>
@@ -34,7 +37,7 @@
         <div class="dropdown">
           <input type="checkbox" id="dropdown_checkbox">
           <label for="dropdown_checkbox" class="dropdown_trigger">
-            About us
+            About us <i>▼</i>
           </label>
           <div class="dropdown_contents">
             <ul>
@@ -68,7 +71,7 @@
         <h2>Progress indicator</h2>
         <p>If the user is going to be completing a number of steps, it'll help them to list each of the steps, and set the right expectations.</p>
       </header>
-      <div class="example">
+      <div class="example" id="progress">
         <ol class="progress_indicator">
           <li><a href="#/steps/1/"><span class="a11y">Go back to </span>Getting started</a></li>
           <li><b><span class="a11y">You are here: </span>Edit your profile</b></li>
