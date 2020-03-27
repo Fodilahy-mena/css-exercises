@@ -1,28 +1,28 @@
 @import "setup.css";
 /* Corners */
 section:nth-of-type(1) > div .circle {
-    right: 71.5%;
-    top: 662px;
-    width: 6%;
-    position: absolute;
+    right: -75.5%;
+    top: 149px;
+    width: 25%;
+    position: relative;
 }
 
 section:nth-of-type(1) > div .rect {
   top: 0;
-  left: -1px;
+  left: -55px;
   width: 25%;
   position: relative;
 }
 
 section:nth-of-type(1) > div .bar {
-  bottom: 1px;
-  left: 42px;
+  bottom: 54px;
+  left: 151px;
   width: 25%;
   position: relative;
 }
 section:nth-of-type(1) > div .pipe {
   width: 25%;
-  right: 53px;
+  right: 110px;
   bottom: -150px;
   position: relative;
 
