@@ -1,0 +1,31 @@
+/*
+Positioning
+*/
+/*
+The default value for position is static.
+*/
+/*
+Top, right, bottom, left, and z-index are some of the other properties that need to be supplied when using any non-default position value?
+*/
+/*
+When an element has been positioned, the display value should be inferred is inline.
+*/
+/*
+`Z-index` is the one of the non-default values for `position` that still maintains a box in the flow of the document
+*/
+/*
+The special or significant about `fixed` and `sticky` positioning is that they are positioned relative to the viewport, which means they always stay in the same place even if the page is scrolled.
+*/
+/*
+We use positioning properties top, left, right, bottom to be set in order to lock that element's coordinates to its parent element.
+*/
+/*
+Absolute positioned layouts are usefull for shrinking-wrap to fit their contents unless their dimensions are specified. The width by setting the left and right properties can be specified, or by setting the width property. The height by setting the top and bottom properties also can be specified, or by setting the height property.
+*/
+/*
+Sometimes if we put two absolutely positioned elements in the same physical space, they'll stack, i.e. only one will be visible on top. The rules are the elements might have been hidden so that the other element renders tranparently. A certain element is on top because the parent element positioned non-static, so we can adjust that by positioning the parent element to static.
+*/
+/*
+A stacking context is created when an element is positioned and assigned a z-index value other than auto , or when an element has an opacity value less than 1.
+
+*/
