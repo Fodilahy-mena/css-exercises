@@ -1,1 +1,116 @@
 @import "setup.css";
+/* Corners */
+section:nth-of-type(1) > div .circle {
+    right: 71.5%;
+    top: 662px;
+    width: 6%;
+    position: absolute;
+}
+
+section:nth-of-type(1) > div .rect {
+  top: 0;
+  left: -1px;
+  width: 25%;
+  position: relative;
+}
+
+section:nth-of-type(1) > div .bar {
+  bottom: 1px;
+  left: 42px;
+  width: 25%;
+  position: relative;
+}
+section:nth-of-type(1) > div .pipe {
+  width: 25%;
+  right: 53px;
+  bottom: -150px;
+  position: relative;
+
+}
+section:nth-of-type(1) > div {
+  height: 199px;
+}
+/* Outside */
+section:nth-of-type(2) > div .circle:nth-of-type(1) {
+  top: -102px;
+  right: 101px;
+  width: auto;
+  position: relative;
+}
+section:nth-of-type(2) > div .circle:nth-of-type(2) {
+  top: -311px;
+  right: -98px;
+  width: auto;
+  position: relative;
+}
+section:nth-of-type(2) > div .circle:nth-of-type(3) {
+  top: -314px;
+  right: 99px;
+  width: auto;
+  position: relative;
+}
+section:nth-of-type(2) > div .circle:nth-of-type(4) {
+  top: -521px;
+  right: -100px;
+  width: auto;
+  position: relative;
+}
+section:nth-of-type(2) > div {
+  height: 199px;
+  overflow: hidden;
+}
+
+/* Centered */
+section:nth-of-type(3) > div .rect {
+  top: -153px;
+  left: 50px;
+  width: 50%;
+  position: relative;
+}
+section:nth-of-type(3) > div .pipe {
+  top: -257px;
+  left: 50px;
+  width: 50%;
+  position: relative;
+}
+section:nth-of-type(3) > div .bar {
+  top: -361px;
+  left: 50px;
+  width: 50%;
+  position: relative;
+}
+section:nth-of-type(3) > div {
+  height: 199px;
+}
+
+/*Stacking*/
+section:nth-of-type(4) > div .rect {
+  top: -204px;
+ width: auto;
+ position: relative;
+}
+section:nth-of-type(4) > div .circle {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: -102%;
+    left: -25%;
+    z-index: 11;
+}
+section:nth-of-type(4) > div .pipe {
+  top: -407px;
+ width: auto;
+ position: relative;
+ z-index: 13;
+}
+
+section:nth-of-type(4) > div .bar {
+  top: -613px;
+ width: auto;
+ position: relative;
+ z-index: 12;
+}
+
+section:nth-of-type(4) > div {
+  height: 199px;
+}
