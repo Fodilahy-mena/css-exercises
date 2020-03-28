@@ -1,0 +1,52 @@
+/* Centered */
+
+/* All of the comments are the code using relative value*/
+/*
+section:nth-of-type(3) > div .rect {
+  top: -153px;
+  left: 50px;
+  width: 50%;
+  position: relative;
+}*/
+section:nth-of-type(3) > div .rect {
+  top: 50px;
+  left: 50px;
+  width: 50%;
+  position: absolute;
+}
+/*
+section:nth-of-type(3) > div .pipe {
+  top: -257px;
+  left: 50px;
+  width: 50%;
+  position: relative;
+}*/
+section:nth-of-type(3) > div .pipe {
+  top: 50px;
+  left: 50px;
+  width: 50%;
+  position: absolute;
+}
+/*
+section:nth-of-type(3) > div .bar {
+  top: -361px;
+  left: 50px;
+  width: 50%;
+  position: relative;
+}*/
+section:nth-of-type(3) > div .bar {
+  top: 50px;
+  left: 50px;
+  width: 50%;
+  position: absolute;
+}
+/*
+section:nth-of-type(3) > div {
+  height: 200px;
+}*/
+
+section:nth-of-type(3) > div {
+  width: 50%;
+  position: relative;
+  height: 200px;
+}

@@ -1,0 +1,67 @@
+/* Outside */
+
+/* All of the comments are the code using relative value*/
+/*
+section:nth-of-type(2) > div .circle:nth-of-type(1) {
+  top: -102px;
+  right: 101px;
+  width: auto;
+  position: relative;
+}*/
+section:nth-of-type(2) > div .circle:nth-of-type(1) {
+  top: -102px;
+  right: 100px;
+  width: 100%;
+  position: absolute;
+}
+/*
+section:nth-of-type(2) > div .circle:nth-of-type(2) {
+  top: -311px;
+  right: -98px;
+  width: auto;
+  position: relative;
+}
+*/
+section:nth-of-type(2) > div .circle:nth-of-type(2) {
+  top: -102px;
+  right: -100px;
+  width: 100%;
+  position: absolute;
+}
+/*
+section:nth-of-type(2) > div .circle:nth-of-type(3) {
+  top: -314px;
+  right: 99px;
+  width: auto;
+  position: relative;
+}*/
+section:nth-of-type(2) > div .circle:nth-of-type(3) {
+  top: 97px;
+  right: 100px;
+  width: 100%;
+  position: absolute;
+}
+/*
+section:nth-of-type(2) > div .circle:nth-of-type(4) {
+  top: -521px;
+  right: -100px;
+  width: auto;
+  position: relative;
+}*/
+section:nth-of-type(2) > div .circle:nth-of-type(4) {
+  top: 98px;
+  right: -100px;
+  width: 100%;
+  position: absolute;
+}
+/*
+section:nth-of-type(2) > div {
+  height: 200px;
+  overflow: hidden;
+}*/
+
+section:nth-of-type(2) > div {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
