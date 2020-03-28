@@ -10,7 +10,7 @@ section:nth-of-type(1) > div .circle {
 }*/
 section:nth-of-type(1) > div .circle {
   left: 75.6%;
-  bottom: -1px;
+  bottom: 0%;
   width: 25%;
   position: absolute;
 }
@@ -22,8 +22,8 @@ section:nth-of-type(1) > div .rect {
   position: relative;
 }*/
 section:nth-of-type(1) > div .rect {
-    top: 0px;
-    left: 0px;
+    top: 0%;
+    left: 0%;
     width: 25%;
     position: absolute;
 }
@@ -35,8 +35,8 @@ section:nth-of-type(1) > div .bar {
   position: relative;
 }*/
 section:nth-of-type(1) > div .bar {
-    top: 0px;
-    left: 151px;
+    top: 0%;
+    right: 0%;
     width: 25%;
     position: absolute;
 }
@@ -50,8 +50,8 @@ section:nth-of-type(1) > div .pipe {
 }*/
 section:nth-of-type(1) > div .pipe {
     width: 25%;
-    left: -1px;
-    bottom: 0px;
+    left: 0%;
+    bottom: 0%;
     position: absolute;
 }
 /*
@@ -60,6 +60,6 @@ section:nth-of-type(1) > div {
 }*/
 
 section:nth-of-type(1) > div {
-  height: 199px;
+  height: 200px;
   position: relative;
 }

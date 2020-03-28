@@ -9,8 +9,8 @@ section:nth-of-type(3) > div .rect {
   position: relative;
 }*/
 section:nth-of-type(3) > div .rect {
-  top: 50px;
-  left: 50px;
+  top: 25%;
+  left: 25%;
   width: 50%;
   position: absolute;
 }
@@ -22,8 +22,8 @@ section:nth-of-type(3) > div .pipe {
   position: relative;
 }*/
 section:nth-of-type(3) > div .pipe {
-  top: 50px;
-  left: 50px;
+  top: 25%;
+  left: 25%;
   width: 50%;
   position: absolute;
 }
@@ -35,8 +35,8 @@ section:nth-of-type(3) > div .bar {
   position: relative;
 }*/
 section:nth-of-type(3) > div .bar {
-  top: 50px;
-  left: 50px;
+  top: 25%;
+  left: 25%;
   width: 50%;
   position: absolute;
 }
@@ -46,7 +46,6 @@ section:nth-of-type(3) > div {
 }*/
 
 section:nth-of-type(3) > div {
-  width: 50%;
   position: relative;
   height: 200px;
 }

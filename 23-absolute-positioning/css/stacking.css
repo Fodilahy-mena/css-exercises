@@ -10,8 +10,6 @@ section:nth-of-type(4) > div .rect {
  position: relative;
 }*/
 section:nth-of-type(4) > div .rect {
-  top: 0px;
- width: auto;
  position: absolute;
 }
 /*
@@ -24,11 +22,7 @@ section:nth-of-type(4) > div .circle {
     z-index: 11;
 }*/
 section:nth-of-type(4) > div .circle {
-  width: 300px;
-  height: 200px;
   position: absolute;
-  top: 0%;
-  left: -25%;
   z-index: 11;
 }
 /*
@@ -39,8 +33,6 @@ section:nth-of-type(4) > div .pipe {
  z-index: 13;
 }*/
 section:nth-of-type(4) > div .pipe {
-  top: 0px;
- width: auto;
  position: absolute;
  z-index: 13;
 }
@@ -53,8 +45,6 @@ section:nth-of-type(4) > div .bar {
  z-index: 12;
 }*/
 section:nth-of-type(4) > div .bar {
-  top: -5px;
- width: auto;
  position: absolute;
  z-index: 12;
 }
@@ -64,6 +54,5 @@ section:nth-of-type(4) > div {
   height: 199px;
 }*/
 section:nth-of-type(4) > div {
-  height: 200px;
   position: relative;
 }
