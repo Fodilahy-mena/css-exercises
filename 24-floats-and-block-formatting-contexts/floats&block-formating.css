@@ -1,0 +1,38 @@
+/*## Floats*/
+
+/*
+1) Default value */
+/*
+1.a) We use a float property to specify how an element is floating. Note that an absolutely positioned element ignores the float property. The float property default value is none
+*/
+/*
+1.b) We use a clear property if we don't want to allow which side of floating elements to float. If the element can fit horizontally in the space next to another element which is floated, it will. The clear propery default value is none.
+*/
+
+/*
+2) The possible values for clear are left, right, none and both.
+*/
+
+/*
+3) The rule associated with a floated item in terms of source order is that the elements after a floating element will flow around it or if it is an image element which is after a floated element, it trys to fit in the horizontal spaces if it could but if not, it will go under the floated element. To sort it out, we use clear property. The floted item must go before any element.
+*/
+/*
+4) Yes, we do can float other elements besides images and I think we can float all of the html elements, but sometimes we have  to change display.
+*/
+/*
+5) We can create a two-column layout with floats by seting the display property to inline-bllock.
+*/
+
+
+/*
+## BFC (Block formating context)
+*/
+/*
+1) Description:
+
+BFC (Block formating context) is a methodology of how boxes interact one in an other, set of rules how container conains its content. An area where block boxes and floats go.
+*/
+/*
+2) We can 'clear' a float by creating a block formatting context on the parent, this is achieved by putting a certain set of properties on the container. The properties are width, height, overflow, zoom, border, float, clear, and padding.
+*/
+/* May be I won't forget about BFC tomorrow.*/
