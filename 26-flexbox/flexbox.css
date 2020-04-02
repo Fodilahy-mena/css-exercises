@@ -1,0 +1,96 @@
+
+
+
+/*
+1.a) The order of property values in the shorthand `flex` property is flex-basis.
+
+1.b) The `2`, `1` and `auto` represent the growth of eny extra free space in flex container, and the shrinking size to fit the container.
+*/
+
+
+/*
+2) We need to set column and row values of flex-wrap and flex-flow properties before we can use align-content.
+*/
+
+/*
+How is `align-content` different to `align-items`?
+
+3) The align-content controles the alignment between or around the content, e.g space-between, space-around, center, and start. But align-items controles the alignment of the content, e.g strech, center, start and end.
+*/
+
+/*
+4) The property which overrides the others is the align-self but not the align-items.
+*/
+
+/*
+5) What other commonly-used box model property is similar to `flex-basis`?
+
+min-width property is equivalent or simmilar to the flex-basis property.
+*/
+/*
+6) There are two ways to change the ordering of flex items within a flex container. One is done on each flex item by using the `order` property. The other can change the whole order of the flex items at the container level. The property is flex-direction: column-reverse/ row-reverse.
+*/
+
+/*
+7) Let's say we wanted some space between each of our three flex items in a flex column.
+
+We need to use align-content property and justify-content to achieve this.
+*/
+
+.flex-containers {
+  height: 30rem;
+  align-items: center;
+  border: 1px solid gray;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.flex-item {
+  background-color: honeydew;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 10px;
+  line-height: 150px;
+  color: red;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 3px 3px 3px 3px salmon;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item:nth-of-type(1) {
+  align-self: flex-start;
+}
+
+.flex-item:nth-of-type(3) {
+  align-self: flex-start;
+  margin-right: -25rem;
+}
+.flex-item:nth-of-type(2) {
+  align-self: flex-end;
+  margin-left: -27rem;
+  margin-bottom: 2rem;
+}
+.flex-item:nth-of-type(4){
+  align-self: flex-end;
+  margin-bottom: 2rem;
+
+}
+.flex-item:nth-of-type(5) {
+  align-self: flex-start;
+  margin-right: -27rem;
+}
+.flex-item:nth-of-type(6) {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
