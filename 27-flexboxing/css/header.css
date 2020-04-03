@@ -11,20 +11,29 @@ body > header a {
   color: inherit;
   text-decoration: none;
 }
-
+/*
+header > nav {
+  flex-shrink: 1;
+}*/
 
 body > header {
   display: flex;
   justify-content: space-around;
+
 }
 
-body > header > nav ul {
+body > header > nav  ul {
   display: flex;
   margin-top: 1rem;
+  flex-wrap: wrap;
+ /* width: 25rem;
+  flex-wrap: wrap;
+  justify-content: space-between; this is good to use instead of margins below but I have to use width and width makes trouble*/
 }
 main {
   margin-top: -3rem;
 }
+
 
 body > header > nav > ul > li:nth-of-type(2) > a {
   margin-left: 2rem;
