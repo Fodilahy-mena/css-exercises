@@ -27,3 +27,13 @@ a.icon {
 a.icon:hover {
   transform: scale(1.2);
 }
+
+footer > nav > ul {
+  justify-content: center;
+  display: flex;
+  margin-top: 4rem;
+}
+footer > nav > ul li:nth-of-type(2) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

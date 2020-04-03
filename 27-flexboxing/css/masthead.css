@@ -22,3 +22,13 @@ main > header > h2 {
 main > header > p {
   margin: 0;
 }
+body > main > header h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+body > main > header h2 ~ p {
+display: flex;
+justify-content: center;
+margin-top: 2rem;
+}

@@ -7,3 +7,10 @@ footer ul {
 footer p {
   color: #999;
 }
+
+
+footer p {
+  display: flex;
+  justify-content: center;
+}
+
