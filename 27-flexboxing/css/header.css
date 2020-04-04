@@ -5,6 +5,8 @@ body > header {
 body > header h1 {
   margin: 0;
   font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 body > header a {
@@ -19,19 +21,18 @@ header > nav {
 body > header {
   display: flex;
   justify-content: space-around;
-
+  flex-wrap: wrap;
 }
 
 body > header > nav  ul {
   display: flex;
   margin-top: 1rem;
-  flex-wrap: wrap;
  /* width: 25rem;
   flex-wrap: wrap;
   justify-content: space-between; this is good to use instead of margins below but I have to use width and width makes trouble*/
 }
 main {
-  margin-top: -3rem;
+  margin-top: -8rem;
 }
 
 
