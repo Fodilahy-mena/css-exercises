@@ -1,0 +1,107 @@
+
+/*
+1) How many columns does a grid have by default?
+
+-> There is only 1 column that a grid has by default.
+*/
+
+/*
+2) What are the differences between Flexbox and Grid?
+
+The differences between Flexbox and grid are the Flexbox is only designed for layout in one dimension, which means it is used with either a column or a row. Wheras Grid was disigned for two dimentional layout so that it works with both column and row at a same time. Also, grid is better at overlapping. But it is hard to get elements to be overlapped in flexbox so it requires negative margin and transforms.
+*/
+
+/*
+3) Why would you use flexbox rather than grid?
+
+We would use flexbox rather than grid because it supports more browsers than grid.
+*/
+
+/*
+4) Why would you use grid rather than flexbox?
+We would use grid rather than flexbox so that we can work with column and row at a same time.
+*/
+
+/*
+5) What's a more concise way to write out the following: `grid-template-columns: 10rem 10rem 10rem 10rem;`
+
+The brief summary of writing this would be like: `grid-template-columns: repeat(4, 10rem);
+*/
+/*
+6) How can we specify a minimum height for a grid row, but still allow the row to increase in height if its content is too tall?
+*/
+
+body {
+  background-color: darkgray;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: black;
+  color: white;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+
+}
+.one {
+ background-color: white;
+  border-radius: 10px;
+ border: 4px solid wheat;
+ grid-row: 1 / 5 ;
+ color: red;
+}
+
+.two
+{
+  background-color: blue;
+  border-radius: 10px;
+  border: 4px solid wheat;
+  grid-column:  ;
+}
+
+.three {
+  background-color: red;
+  border-radius: 10px;
+  border: 4px solid wheat;
+  grid-row: 1 / 3;
+}
+
+.four {
+  background-color: rgb(6, 248, 6);
+  border-radius: 10px;
+  border: 4px solid wheat;
+  grid-row: 3 / 5;
+}
+.five {
+  background-color: hotpink;
+  border-radius: 10px;
+  border: 4px solid wheat;
+}
+.six {
+  background-color: aqua;
+  border-radius: 10px;
+  border: 4px solid wheat;
+  grid-row: ;
+}
+
+.seven {
+  background-color: blueviolet;
+  border-radius: 10px;
+  border: 4px solid wheat;
+  grid-column: ;
+}
+
