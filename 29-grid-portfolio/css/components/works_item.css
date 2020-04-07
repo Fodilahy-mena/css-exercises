@@ -2,18 +2,18 @@
   display: grid;
   column-gap: 15px;
   grid-template-columns: repeat(6, 145px);
-  grid-area: 4 / 4 / 2 / 6;
+  margin-block-start: 0.75rem ;
 }
 
 .works_item_header {
   color: #ccc;
 }
+.works_item_header p {
+  font-size: 0.875rem;
+}
 
 .works_item_content {
-  display: grid;
-  column-gap: 15px;
-  grid-template-columns: repeat(1, 789px);
-  row-gap: 30px;
+  grid-column: 2 / 7;
 }
 
 .works_item_image_container {
