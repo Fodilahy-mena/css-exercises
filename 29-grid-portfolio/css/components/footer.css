@@ -19,7 +19,8 @@ body > footer a:hover {
 }
 
 body > footer p:last-child {
-
+ text-align: end;
+ margin-top: -2rem;
 }
 
 body > footer p:last-child a {
