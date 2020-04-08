@@ -25,7 +25,9 @@
   margin: 0;
   padding: 0;
   grid-template-columns: repeat(4, 45px);
-    display: grid;
+  display: grid;
+  position: relative;
+  margin-left: -0.75rem;
 }
 
 .works_item_navigation a {
