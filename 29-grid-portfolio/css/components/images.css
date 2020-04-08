@@ -3,5 +3,17 @@
 }
 
 .image_half {
+  width: calc((3*145px) + (2*15px));
+  margin-inline-end: 30px;
+}
 
+.post:nth-of-type(odd)
+  .image_half {
+    float: left;
+    margin-inline-end: 15px;
+}
+.post:nth-of-type(even)
+  .image_half {
+    float: right;
+    margin-inline-start: 15px;
 }
