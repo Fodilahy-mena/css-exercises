@@ -12,7 +12,7 @@
   height: 20px;
   background-color: rgb(63, 63, 63);
   transition: background-color 1s;
-  counter-increment: item;
+  counter-increment: var(--counter-name);
 }
 
 #dry a:hover {
@@ -37,4 +37,8 @@
   color: rgb(255, 255, 255);
 }
 
+:root {
+  --counter-name: item;
+  --counter-lookup: counter(var(--counter-name))
+}
 
