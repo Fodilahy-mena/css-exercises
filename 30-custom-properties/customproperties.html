@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom properties</title>
+  <style>
+    html {
+      display: inline-block;
+      padding: 0;
+    }
+    body {
+      background-color: blueviolet;
+      margin: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: yellow;
+    }
+    ol {
+      font-size: 1.5rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      Custom properties css exercise
+    </h1>
+  </header>
+  <div>
+    <ol>
+      <li>
+        <p>
+          We <q>have</q> to use two dashes(hyphens) [--] or two underscore [ _ _ ] when defining a Custom Property's name
+        </p>
+      </li>
+      <li>
+        <p>
+          Custom property names are case-sensitive. In other words, --cellColor and --cellcolor are considered two distinct property names. So we can't use spaces and slashes in the between of property sorthand in a Custom Property name.
+        </p>
+      </li>
+      <li>
+        <p>
+          What possible values that we can assign to a new Custom Property are number, text, rem, percentage and pixel
+        </p>
+      </li>
+      <li>
+        <p>
+          When is it useful to create Custom Properties using the `:root` or `html` selector? When is it not?
+        It is useful when you want to apply it to another properties instead of repeating the values many times, so there is no need of using it if there is not any property that should use it.
+      </p>
+      </li>
+      <li>
+        <p>
+          After we've defined a new Custom Property, we can recall or use that Custom Property by inserting the value of a custom property with var function.
+        </p>
+      </li>
+      <li>
+        <p>
+          There are several ways to override or change a Custom Property. By using @media query, :root and html
+        </p>
+      </li>
+      <li>
+        <p>
+          Custom Properties useful because it allows users to not repeat theirselves
+        </p>
+      </li>
+      <li>
+        <p>
+          The only aspect (or part) of CSS syntax that we can use Custom Properties for is :root.
+        </p>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>
