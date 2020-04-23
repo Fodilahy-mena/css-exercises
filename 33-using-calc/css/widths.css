@@ -1,3 +1,12 @@
 .container blockquote {
   width: 100%;
 }
+
+:root {
+  --variable-width: 100%;
+}
+
+.container blockquote {
+  width: calc(var(--variable-width) - 2*(1rem + 1rem + 4rem) - (2 * 2rem));
+  /*box-sizing: border-box;*/
+}
