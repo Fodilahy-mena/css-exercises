@@ -5,11 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calc function</title>
+  <style>
+    body {
+      background: conic-gradient(at 0% 30%, black 15%, darkgreen 30%, red 47%);
+      background-repeat: no-repeat;
+      margin: 2rem;
+    }
+    ol {
+      font-size: 1.5rem;
+      color: white;
+    }
+    h1 a {
+      font-size: 4rem;
+      color: white;
+      text-decoration: none;
+    }
+    h4 {
+      font-size: 3rem;
+      color: whitesmoke;
+    }
+    h4 ~ p {
+      font-size: 2rem;
+      color: yellow;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>
-      Calc function
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc">Calc( ) function</a>
     </h1>
   </header>
   <main>
@@ -24,36 +48,80 @@
     <div>
       <ol>
         <li>
-          What values can a `calc()` function support?
-
-          In calc() function there are many values that could be supported such us length, frequency, angle, time, percentage and number, or integer as it known.
+          <p>
+            What values can a `calc()` function support?
+          </p>
+          <p>
+            In calc() function there are many values that could be supported such us length, frequency, angle, time, percentage and number, or integer as it known.
+          </p>
         </li>
         <li>
-          How can we control the mathematical order of operation (PEDMAS / BODMAS) in the function, so that something like `calc(2 + 3 * 4)` doesn't equal `20`, when it is instead meant to equal `14`?
-
-          According to the PEDMAS / BODMAS rules this means we start to calculate from:
-          B: Brackets first,
-          O: Orders (i.e. Powers and Square Roots, etc.),
-          DM: Division and Multiplication (left-to-right) and
-          AS: Addition and Subtraction (left-to-right) so how do we calculate it then 3*4 = 12 and + 2 that is why it gives 14
+          <p>
+            How can we control the mathematical order of operation (PEDMAS / BODMAS) in the function, so that something like `calc(2 + 3 * 4)` doesn't equal `20`, when it is instead meant to equal `14`?
+          </p>
+          <p>
+            According to the PEDMAS / BODMAS rules this means we start to calculate from:
+            B: Brackets first,
+            O: Orders (i.e. Powers and Square Roots, etc.),
+            DM: Division and Multiplication (left-to-right) and
+            AS: Addition and Subtraction (left-to-right).
+            So how it works is like 3 * 4 = 12 and + 2 that is why it gives 14.
+          </p>
+          <p>
+            But to make it equal 20, we have add brackets with 2 + 3 as in `calc((2 + 3) * 4)` then it will give 20.
+          </p>
         </li>
         <li>
-          Can we use a `calc()` function to convert one type of unit to another type of unit?
+          <p>
+            Can we use a `calc()` function to convert one type of unit to another type of unit?
+          </p>
+          <p>
+            Yes we do can use a `calc()` function to convert one type of unit to another type of unit.
+          </p>
         </li>
         <li>
-
+          <p>
+            If we want to convert a unitless number to a unit value, what do we have to do?
+          </p>
+          <p>
+            If we want to convert a unitless number to a unit value, what do we have to do is calculate the unitless integer with a number that has an unit. For example --base-unit: calc(var(--columns) / 2 * 1rem);.
+          </p>
         </li>
         <li>
-
+          <p>
+            Why do the *plus* and *minus* operators inside the function need spaces around them?
+          </p>
+          <p>
+            It is becauuse, it would be considered as a negative integer if there each of them don't have spaces around. For example calc(40% -20px); is considered invalide, because as the user agent know about it is that the percentage value followed by a negative integer, not an expression. So it should be calc(40% - 20px); or calc(40% + 20px);.
+          </p>
         </li>
         <li>
-
+          <p>
+            How can we convert a value into a negative value?
+          </p>
+          <p>
+            We can  convert a value into a negative value by using a css variable.
+            Like this :root {
+            --body-width: 55px;
+          }
+          </p>
+          <p>
+          .item {
+            position: absolute;
+          width: calc(-1 * var(--body-width));
+          }
+          </p>
         </li>
         <li>
-
+          <p>
+            Can the `calc()` function work with colour values? e.g. a light red plus a light red should equal a darker red.
+          </p>
+          <p>
+            It work with some browsers like Firefox and Safary, but it doesn't work with the others.
+          </p>
         </li>
       </ol>
     </div>
-  <main>
+  </main>
 </body>
 </html>
