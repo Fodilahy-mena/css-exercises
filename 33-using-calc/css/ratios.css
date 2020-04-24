@@ -1,23 +1,42 @@
 #ratio_2_1 {
+  --width: 2;
+  --height: 1;
+  /*
   padding-block-start: 50%;
-  padding-block-start: calc(400 / 800 * 100%);
+  padding-block-start: calc(400 / 800 * var(--conversion-rate));
+  */
 }
 
 #ratio_16_9 {
+  --width: 16;
+  --height: 9;
+  /*
   padding-block-start: 56.25%;
-  padding-block-start: calc(450 / 800 * var(--variable-width));
+  padding-block-start: calc(450 / 800 * var(--conversion-rate));
+  */
 }
 
 #ratio_4_3 {
+  --width: 4;
+  --height: 3;
+  /*
   padding-block-start: 75%;
-  padding-block-start: calc(600 / 800 * var(--variable-width));
+  padding-block-start: calc(600 / 800 * var(--conversion-rate));
+  */
 }
 
 #ratio_1_1 {
+  --width: 1;
+  --height: 1;
+  /*
   padding-block-start: 100%;
-  padding-block-start: calc(800 / 800 * var(--variable-width));
+  padding-block-start: calc(800 / 800 * var(--conversion-rate));
+  */
 }
 
 :root {
-  --variable-width: 100%;
+  --conversion-rate: 100%;
+}
+.ratio {
+  padding-block-start: calc(var(--height) / var(--width) * var(--conversion-rate));
 }
