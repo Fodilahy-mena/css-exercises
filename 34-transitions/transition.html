@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+  <style>
+    p:nth-of-type(1)::after {
+      content: " Ӝ";
+    }
+    p:nth-of-type(2)::after {
+      content: " թ";
+    }
+    p:nth-of-type(3)::after {
+      content: " ࢰ";
+    }
+
+    .ball::after {
+      content: "ᴑ";
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Spider</p>
+    <p>Pig</p>
+    <p>Cameleon</p>
+    <p class="ball"></p>
+    <p class="goal"></p>
+    <p>Frog</p>
+    <p>Cat</p>
+    <button>
+      Play
+    </button>
+  </div>
+</body>
+</html>
