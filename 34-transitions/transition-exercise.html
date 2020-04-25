@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning transitions in css</title>
+  <style>
+
+    html {
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.25;
+    }
+    body {
+      background-color: whitesmoke;
+      font-family: sans-serif;
+      margin: 2rem;
+    }
+
+    body > header {
+      background-color: #333;
+      color: white;
+      margin: -2rem -2rem 0;
+      padding: 2rem;
+    }
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+    h4 {
+      color: blue;
+    }
+    body > header a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="">Transitions exercise</a>
+    </h1>
+    <p>
+      Transitions offer us the simplest form of animation in CSS.
+    </p>
+  </header>
+  <main>
+    <header>
+      <h4>
+        The word <q>transition</q> means to 'change from one state to another'. In CSS, these transitions occur per element, per property.
+      </h4>
+    </header>
+    <nav>
+      <ul>
+        <li>The first state is the initial state, or how the element was to begin with.</li>
+        <li>The second state, or target state, is what the element will become.</li>
+      </ul>
+      <p>Transitions take care of all the intermediate stages between those two states.</p>
+      <p>OK, so let's hunker down and learn more about transitions!</p>
+    </nav>
+    <div>
+      <ol>
+        <li>
+          <p>
+            The `transition` property is a 'shorthand property'. What other properties are included in this shorthand property?
+          </p>
+          <p>
+            There are four CSS properties that are included in transition shorthand property such us transition-property, transition-duration, transition-timing-function and transition-delay.
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the difference between a timing function, delay, and duration?
+          </p>
+          <p>
+            The difference between them is that timing function takes care of how values are coming in time to be calculated for the css properties being affected by a transition effect, the delay is for the diration to wait befor starting a property's transition effect wheras duration of course controles how long a transition animation takes time to complete.
+          </p>
+        </li>
+        <li>
+          <p>
+            What CSS properties are *animatable* using transitions?
+          </p>
+          <p>
+            Most of the properties are animatable especially which have number value, though there are some properties that have text value could be animated too.
+          </p>
+          <p>
+            The animatable properties are:
+          </p>
+          <p>
+            backdrop-filter, background, background-color, background-position, background-size, block-size, border, border-block-end, border-block-end-color, border-block-end-width, border-block-start, border-block-start-color, border-block-start-width, border-bottom, border-bottom-color, border-bottom-left-radius, border-bottom-right-radius, border-bottom-width, border-color, border-end-end-radius, border-end-start-radius, border-image-outset, border-image-slice, border-image-width, border-inline-end, border-inline-end-color, border-inline-end-width, border-inline-start, border-inline-start-color, border-inline-start-width, border-left, border-left-color, border-left-width, border-radius, border-right, border-right-color, border-right-width, border-start-end-radius, border-start-start-radius, border-top, border-top-color, border-top-left-radius, border-top-right-radius, border-top-width, border-width, bottom, box-shadow, caret-color, clip, clip-path, color, column-count, column-gap, column-rule, column-rule-color, column-rule-width, column-width, columns, filter, flex, flex-basis, flex-grow, flex-shrink, font, font-size, font-size-adjust, font-stretch, font-variation-settings, font-weight, gap, grid-column-gap, grid-gap, grid-row-gap, grid-template-columns, grid-template-rows, height, inline-siz, inset, inset-block, inset-block-end, inset-block-start, inset-inline, inset-inline-end, inset-inline-start, left, letter-spacing, line-clamp, line-height, margin, margin-block-end, margin-block-start, margin-bottom, margin-inline-end, margin-inline-start, margin-left,margin-right, margin-top, mask, mask-border, mask-position, mask-size, max-block-size, max-height, max-inline-size, max-lines, max-width, min-block-size, min-height, min-inline-size, min-width, object-position, offset, offset-anchor, offset-distance, offset-path, offset-position, offset-rotate, opacity, order, outline, outline-color, outline-offset, outline-width, padding, padding-block-end, padding-block-start, padding-bottom, padding-inline-end, padding-inline-start, padding-left, padding-right, padding-top, perspective, perspective-origin, right, rotate, row-gap, scale, scroll-margin, scroll-margin-block, scroll-margin-block-end, scroll-margin-block-start, scroll-margin-bottom, scroll-margin-inline, scroll-margin-inline-end, scroll-margin-inline-start, scroll-margin-left, scroll-margin-right, scroll-margin-top, scroll-padding, scroll-padding-block, scroll-padding-block-end, scroll-padding-block-start, scroll-padding-bottom, scroll-padding-inline, scroll-padding-inline-end, scroll-padding-inline-start, scroll-padding-left, scroll-padding-right, scroll-padding-top, scroll-snap-coordinate, scroll-snap-destination, scrollbar-color, shape-image-threshold, shape-margin, shape-outside,tab-size, text-decoration, text-decoration-color, text-decoration-thickness, text-emphasis, text-emphasis-color, text-indent, text-shadow, text-underline-offset, top, transform, transform-origin, translate, vertical-align, visibility, width, word-spacing, z-index, zoom.
+          </p>
+        </li>
+        <li>
+          <p>
+            Can we select more than one property to transition at a time? If so, how?
+          </p>
+          <p>
+            Yes we can select more than one property to transition at a time by using adjacent sibling selector (+).
+          </p>
+        </li>
+        <li>
+          <p>
+            How can we set or define the desired transition state, using CSS?
+          </p>
+          <p>
+
+          </p>
+        </li>
+        <li>
+          <p>
+            Do we need transitions? What makes them useful?
+          </p>
+          <p>
+            Animations are usefull for telling stories or progressing and introducing thing to the screen.
+          </p>
+        </li>
+        <li>
+          <p>
+            At what point can transitions become a problem?
+          </p>
+          <p>
+            They can be a problem when the user of the website that is animated very slow is in a rash. For example when you click a button, it may take 3 or 4 seconds to work depends on how long the transition animation takes time to complete(transition-duration).
+          </p>
+        </li>
+        <li>
+          <p>
+            Transitions don't work reliably with the `auto` keyword being one of the end states. Why is that?
+          </p>
+          <p>
+            It is because we can not transform an element which has an <q>auto</q> property value to an other unit.
+          </p>
+        </li>
+        <li>
+          <p>
+            How can we stagger transitions? i.e. make a number of child elements all start at different times?
+          </p>
+          <p>
+            We ca achieve that by using different values of a same property with the parent element and the children. What this means is we could use the transition-delay and give it a different value in each siblings.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </main>
+</body>
+</html>
