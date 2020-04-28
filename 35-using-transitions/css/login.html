@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button</title>
+  <style>
+    button {
+      background-color: rgba(0, 0, 255, 1);
+      color: white;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      border-inline-start: 0.125rem solid rgba(0, 0,128);
+      border-inline-end: 0.125rem solid rgba(0, 0,128);
+      border-block-end: 0.25rem solid rgba(0, 0,128);
+      transition: background-color, border-width, padding;
+
+    }
+
+    button:hover, button:focus {
+      background-color: rgba(0, 0, 255,0.5);
+      transition-duration: 2s;
+    }
+    button:active {
+      border-width: 0;
+      padding-inline-start: 17px;
+      padding-inline-end: 17px;
+      padding-block-end: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      Button
+    </h1>
+  </header>
+  <main>
+    <div>
+      <button>
+        Log in
+      </button>
+    </div>
+  </main>
+</body>
+</html>

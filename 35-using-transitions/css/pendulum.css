@@ -4,6 +4,7 @@
   --ball-diameter: 40px;
   --ball-string-length: 200px;
   --ball-string-width: 2px;
+  --transition-duration: 2s;
 }
 
 .pendulum {
@@ -49,26 +50,26 @@
 
 .pendulum .metal-ball:nth-of-type(1) {
   transform: rotate(20deg);
-  transition-duration: 2s;
+  transition-duration: var(--transition-duration);
   transition-timing-function: ease-out;
   transition-delay: 2s;
 }
 .pendulum:hover .metal-ball:nth-of-type(1) {
   transform: rotate(0deg);
-  transition-duration: 2s;
+  transition-duration: var(--transition-duration);
   transition-timing-function: ease-in;
   transition-delay: 0s;
 }
 
 .pendulum .metal-ball:nth-of-type(3) {
   transform: rotate(0deg);
-  transition-duration: 2s;
+  transition-duration: var(--transition-duration);
   transition-timing-function: ease-in;
   transition-delay: 0s;
 }
 .pendulum:hover .metal-ball:nth-of-type(3) {
   transform: rotate(-20deg);
-  transition-duration: 2s;
+  transition-duration: var(--transition-duration);
   transition-timing-function: ease-out;
   transition-delay: 2s;
 }

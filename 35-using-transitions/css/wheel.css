@@ -4,6 +4,10 @@
   --tyre-thickness: 10px;
   --wheel-diameter: 100px;
   --wheel-radius: calc(var(--wheel-diameter) / 2);
+  --full-rotate: 3.02px;
+  --pi: 22 / 7;
+  --circumstance: calc(var(--pi) * var(--wheel-diameter));
+  --max-travel-distance: var(--m);
 }
 
 .scene {
@@ -22,7 +26,7 @@
 .scene:hover .wheel {
   left: 100%;
   transform: rotate(360deg);
-  transition-duration: 2s;
+  transition-duration: 4s;
 }
 
 
@@ -37,7 +41,7 @@
   height: var(--wheel-diameter);
   width: var(--wheel-diameter);
   position: relative;
-  transition-duration: 2s;
+  transition-duration: 4s;
 
 }
 
