@@ -21,7 +21,10 @@
 */
 .scene:hover .wheel {
   left: 100%;
+  transform: rotate(360deg);
+  transition-duration: 2s;
 }
+
 
 /* Wheel setup */
 .wheel {
@@ -34,6 +37,8 @@
   height: var(--wheel-diameter);
   width: var(--wheel-diameter);
   position: relative;
+  transition-duration: 2s;
+
 }
 
 .spoke {
@@ -49,3 +54,9 @@
 .spoke:nth-of-type(2) { transform: rotate(45deg); }
 .spoke:nth-of-type(3) { transform: rotate(90deg); }
 .spoke:nth-of-type(4) { transform: rotate(135deg); }
+
+
+.scene:hover {
+    transform: translate(-100%, 25%) rotate(-3deg) translate(98%, 6%);
+    transition-duration: 1s;
+}
