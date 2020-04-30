@@ -41,8 +41,12 @@
   min-width: 200px;
   transition: transform .2s ease-in;
   border-left: #aaa solid 1px;
-}
+  /*visibility: hidden;*/
 
+}
+.user-interface:hover nav {
+  /*visibility: visible;*/
+}
 .user-interface nav ul {
   list-style: none;
   margin: 0;
