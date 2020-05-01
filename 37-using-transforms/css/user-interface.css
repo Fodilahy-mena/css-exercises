@@ -42,6 +42,7 @@
   transition: transform .2s ease-in;
   border-left: #aaa solid 1px;
   /*visibility: hidden;*/
+  transform: translate(100%);
 
 }
 .user-interface:hover nav {
@@ -64,5 +65,5 @@
 }
 
 .user-interface :checked ~ nav {
-
+  transform: translate(0);
 }
