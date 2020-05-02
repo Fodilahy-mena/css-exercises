@@ -95,4 +95,24 @@
 
 }
 
+/*.scene:hover #solar-system {
+  transform-origin: -100px 50%;
+  transform: translate(-50%, -50%) rotate(360deg);
 
+}
+
+.scene:hover #earth-system {
+  transform-origin: -100px 50%;
+   transform: translate(160px, 50%) rotate(12turn);
+  transform: translate(160px) translate(-50%, -50%) rotate(1turn);
+}
+
+.scene:hover #earth {
+
+}
+
+.scene:hover #luna {
+transform-origin: -55px 50%;
+transform: translate(55px, 5%) rotate(12turn);
+}
+*/
