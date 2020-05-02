@@ -34,6 +34,7 @@
 #solar-system {
   width: var(--solar-system-size);
   height: var(--solar-system-size);
+  /* transform: rotate(0deg); */
 }
 
 #sun {
@@ -78,12 +79,12 @@
 }
 
 .scene:hover #solar-system {
+  transform: translate(-50%, -50%) rotate(360deg);
 
 }
 
 .scene:hover #earth-system {
-  /* transform: translate(-50%, -50%) translateX(160px); */
-
+  transform: translate(160px) translate(-50%, -50%) rotate(12turn);
 }
 
 .scene:hover #earth {
@@ -93,3 +94,5 @@
 .scene:hover #luna {
 
 }
+
+
