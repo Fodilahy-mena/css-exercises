@@ -11,6 +11,22 @@
   --transition-settings: transform var(--simulated-year) linear;
   --sphere-lighting: linear-gradient(90deg, rgba(var(--black-rgb), 0.01) 0%, rgba(var(--black-rgb), 0.01) 50%, rgba(var(--black-rgb), 0.5) 50%, rgba(var(--black-rgb), 0.5) 100%);
 }
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+@keyframes earth-orbit {
+  0% {
+    transform: translate(calc(var(--earth-system-size) / 2)-50%, translateX(-50%)) rotate(0);
+  }
+  100% {
+    transform: translate(calc(var(--earth-system-size) / 2)-50%, translateX(-50%)) rotate(12turn);
+  }
+}
 
 .sphere {
   border-radius: 50%;
@@ -34,7 +50,10 @@
 #solar-system {
   width: var(--solar-system-size);
   height: var(--solar-system-size);
-  /* transform: rotate(0deg); */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: orbit;
+  animation-duration: 5s;
 }
 
 #sun {
@@ -43,12 +62,17 @@
   height: var(--sun-size);
   background-image: var(--glow);
   box-shadow: 0 0 50px 0 rgba(255, 252, 211, 0.9);
+  /* transform: translate(-50%, -50%) rotateX(-60deg) */
 }
 
 #earth-system {
   width: var(--earth-system-size);
   height: var(--earth-system-size);
-
+  /* transform: translate(-50%, -50%) rotateX(60deg) *
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: earth-orbit;
+  animation-duration: 5s;*/
 }
 
 #earth {
@@ -79,12 +103,12 @@
 }
 
 .scene:hover #solar-system {
-  transform: translate(-50%, -50%) rotate(360deg);
+  /* transform: translate(-50%, -50%) rotate(360deg); */
 
 }
 
 .scene:hover #earth-system {
-  transform: translate(160px) translate(-50%, -50%) rotate(12turn);
+  /* transform: translate(160px) translate(-50%, -50%) rotate(12turn); */
 }
 
 .scene:hover #earth {
@@ -94,7 +118,10 @@
 .scene:hover #luna {
 
 }
+.scene {
+  transform-style: preserve-3d;
 
+}
 /*.scene:hover #solar-system {
   transform-origin: -100px 50%;
   transform: translate(-50%, -50%) rotate(360deg);
