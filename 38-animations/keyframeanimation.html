@@ -5,6 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animation</title>
+  <style>
+    html {
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.25;
+    }
+    body {
+      background-color: whitesmoke;
+      font-family: sans-serif;
+      margin: 2rem;
+    }
+
+    body > header {
+      background-color: #333;
+      color: white;
+      margin: -2rem -2rem 0;
+      padding: 2rem;
+    }
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+    h4 {
+      color: blue;
+    }
+    body > header a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    body > header:hover {
+      background-color: blueviolet;
+      transition-duration: 4s;
+      color: gold;
+    }
+
+    body:hover {
+      background-color: sienna;
+      color: white;
+      transition-duration: 4s;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,27 +73,28 @@
       <ol>
         <li>
           <p>Keyframe Animation setup needs some unique code, what does it start with?</p>
-          <p>It start with @ (at sign)</p>
+          <p>It starts with @keyframes</p>
         </li>
         <li>
           <p>What makes the keyframes code different to the rest of CSS?</p>
           <p>What makes it different to the rest of CSS is that</p>
         </li>
         <li>
-          <p></p>
-          <p></p>
+          <p>How do we use a keyframe animation we set up earlier as a property in a ruleset for an element?</p>
+          <p>We call the ruleset from keyframe animation to the animation name</p>
         </li>
         <li>
-          <p></p>
-          <p></p>
+          <p>Keyframe animations have other keywords that aren't available in `transitions`, what are these keywords?</p>
+          <p>There are many keywords that aren't available in transitions such us alternate, infinite, reverse, alternate-reverse, paused and running</p>
         </li>
         <li>
-          <p></p>
-          <p></p>
+          <p>How many properties can we animate at once?</p>
+          <p>We can animate two or more properties at once which are longhand properties of animation.</p>
         </li>
         <li>
-          <p></p>
-          <p></p>
+          <p>What properties are animatable?</p>
+          <p>Most of the properties in css are animatable though some aren't.</p>
+          <p>We can animate those properties shorthand with longhand like background, border, box-shadow, bottom, clip, color, column, filter, flex, font, gap, grid, height, inset, margin, scrolle, text and transform etc.</p>
         </li>
       </ol>
     </div>
