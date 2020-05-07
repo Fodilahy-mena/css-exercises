@@ -1,24 +1,14 @@
- /* @keyframes bouce {
+ @keyframes bounce {
   0% {
     transform: translateY(0%) rotateX(0deg) scaleY(1);
-    top: 0;
-    right: 93%;
   }
-  13% {
-    top: 82%;
-    right: 93%;
-  }
-  25% {
-    top: 20.5%;
-    right:  77%;
-  }
+
    100% {
     transform: translateY(calc(var(--ball-diameter) * 4)) scaleX(1.2);
-
   }
-} */
+}
 
- @keyframes bounce {
+ /* @keyframes ballmove {
 0% {
   transition: transform 16s;
   transform: rotateZ(-360deg);
@@ -60,7 +50,7 @@
   right: 0%;
   top: 82%;
 }
-}
+} */
 
 :root {
   --ball-diameter: 100px;
@@ -82,15 +72,15 @@
   background-color: rgb(196, 56, 5);
   background-image:
     radial-gradient(rgba(255,255,255,.8) 0%, rgba(255,255,255,.02) 50%),
-    radial-gradient(rgba(255, 69, 0, 1) 0%, rgb(255, 69, 0, .4) 100%);
+    radial-gradient(rgb(240, 201, 187) 0%, rgb(255, 69, 0, .4) 100%);
   background-position:
     50% -25px,
     50% 50%;
   background-repeat: no-repeat;;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  /* animation-timing-function: ease-in; */
+  animation-timing-function: ease-in;
   animation-duration: 1s;
-  animation-name: bouce;
-  /* animation-timing-function: linear; */
+  animation-name: bounce;
+  animation-timing-function: linear;
 }
