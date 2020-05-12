@@ -6,12 +6,14 @@
       Let's do some research on these shadows…
 
       1. `box-shadow` and `text-shadow` have very similar value syntax. Where do they differ?
-      They are different when using an inset value because it only works with box shadows.
-      
+      They are different when using an inset and thickness value because it only works with box shadows.
+
       1. If I wanted to create a hard-edge shadow, one that looks like a solid border, what combination of values would I need to use?
-      We can use 0px with the blur thickness.
+      We can't do that because it doesn't support blur thickness.
+
       1. Is it possible to create a shadow on a circular element? What about a polygon?
       Yes It is possible but it doesn't work with a polygon which is a value of a clip.
+
       1. Is it possible to create multiple shadows on the same element?
       Yes It is possible if we use multiple values like (text-shadows: 10px 10px 0 blue, -10px -10px 0 red;)
     */
