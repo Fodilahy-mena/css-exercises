@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font face CSS</title>
+  <style>
+    html {
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.25;
+    }
+    body {
+      background-color: whitesmoke;
+      font-family: sans-serif;
+      margin: 2rem;
+    }
+
+    body > header {
+      background-color: #333;
+      color: white;
+      margin: -2rem -2rem 0;
+      padding: 2rem;
+    }
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+    h4 {
+      color: blue;
+    }
+    body > header a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    body > header:hover {
+      background-color: blueviolet;
+      transition-duration: 4s;
+      color: gold;
+    }
+
+    body:hover {
+      background-color: sienna;
+      color: white;
+      transition-duration: 4s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">
+        Font face CSS
+      </a>
+    </h1>
+  </header>
+  <main>
+    <header>
+      <h4>
+        Webfonts are strongly tied to a site's design and its visual identity.
+      </h4>
+      <p>
+        But before we can use them, there are a few things we need to know:
+      </p>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <p>
+            There are several types of font formats, e.g. `WOFF`, `TTF`, etc.? Name at least 2 other font file formats.
+          </p>
+          <p>
+            There are more font formats than which have been mentioned above such as SVG, WOFF2, OTF, and EOT format.
+          </p>
+        </li>
+        <li>
+          <p>
+            Which of these font file formats is a good candidate to use in all browsers?
+          </p>
+          <p>
+            WOF is the best candidate font file format to use in all browsers and WOFF2 is good too in terms of how much Internet you are going to use, yet there is a browser that doesn't support.
+          </p>
+        </li>
+        <li>
+          <p>
+            The font-face syntax is also different to other @-blocks. What are the differences between a `@font-face` block and `@keyframes` / `@media` queries / `@supports` blocks, etc.
+          </p>
+          <p>
+            The differences between these are @font-face enable user to specify a custom font with which to display text, and enable user to load or install fonts which they haven't installed in their computer wheras @keyframes controles the process of animation intermediate steps. And the @media queries makes your apps or website to be fit or possible with all devices. We don't give @font-face a name unlike @keyframes. It has only one curly braces and only uses fonts properties. What makes it unique is that
+          </p>
+        </li>
+        <li>
+          <p>
+            Some fonts come with licencing restrictions. What does this mean?
+          </p>
+          <p>
+            What does it mean is we have to pay for the fonts that we are downloading.
+          </p>
+        </li>
+        <li>
+          <p>
+            A designer has assigned you a mockup to turn into HTML/CSS. You've tabled the list of fonts used in the document as follows:
+
+            font-family | font-weights | italic?
+            --- | --- | ---
+            'Roboto' | 400, 700 | Both
+            'Proxima Nova' | 100, 300, 600, 800 | No
+
+            How many font-face blocks do we need to provide if we want to support all the chosen fonts?
+          </p>
+          <p>
+            We need to provide eight font-face blocks if we want to support all the choosen fonts because 1 for 400, 1 for both 400, 1 for 700, 1 for both 700 and like that with proxima nova.
+          </p>
+        </li>
+        <li>
+          <p>
+            At roughly 20KB per font file, how many kilobytes of fonts would each of our users have to download in the example above?
+          </p>
+          <p>
+            Maybe it gives about 160KB because 20KB times eight.
+          </p>
+        </li>
+        <li>
+          <p>
+            If we chose to offer WOFF2 as well as WOFF, what syntax would we use? How many files would we have, according to question 5?
+          </p>
+          <p>
+            Maybe we would use local(), url(woof2) format(), url(woof) format(). There are 16 files because we offering the eight font face klocks to woof and to woof2.
+          </p>
+        </li>
+        <li>
+          <p>
+            Most of our users would probably have the exact font we want to serve already installed on their devices. How can we make sure the user's browser doesn't download the fonts they might already have?
+          </p>
+          <p>
+            We set the local function fonts first to check if they have it in their local machine. But if they don't have it, then they are going to download the font that they don't have.
+          </p>
+        </li>
+        <li>
+          <p>
+            Sometimes we have to assign fallback fonts for our custom webfonts we add via `@font-face`. What are some things to keep in mind when it comes to selecting these fallback fonts?
+          </p>
+          <p>
+            We need to use characters that are similar to sans-serif.
+          </p>
+        </li>
+        <li>
+          <p>
+            The browser can use one of several strategies for loading the fonts, e.g. showing nothing until the font is downloaded, or using a fallback font first. What property can we use to help the browser decide on which strategy to use?
+          </p>
+          <p>
+            We use font-display property.
+          </p>
+        </li>
+      </ul>
+    </nav>
+  </main>
+
+</body>
+</html>
