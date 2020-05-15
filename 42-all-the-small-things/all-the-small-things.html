@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All the small things</title>
+  <style>
+    html {
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.25;
+    }
+    body {
+      background-color: whitesmoke;
+      font-family: sans-serif;
+      margin: 2rem;
+    }
+
+    body > header {
+      background-color: #333;
+      color: white;
+      margin: -2rem -2rem 0;
+      padding: 2rem;
+    }
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+    body:hover h4 {
+      color: yellow;
+      transition-duration: 4s;
+    }
+    body > header a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    body > header:hover {
+      background-color: blueviolet;
+      transition-duration: 4s;
+    }
+
+    body:hover {
+      background-color: rgb(138, 137, 137);
+      color: white;
+      transition-duration: 4s;
+    }
+    a {
+      text-decoration: none;
+      color: red;
+      border: 2px solid;
+      border-color: magenta;
+    }
+    body:hover a{
+      text-decoration: none;
+      color: lawngreen;
+      border: 2px solid;
+      border-color: magenta;
+      transition-duration: 4s;
+    }
+    nav > ol > li:nth-of-type(1) > p > a {
+      cursor: help;
+    }
+    nav > ol > li:nth-of-type(2) > p {
+    pointer-events: fill;
+    }
+    nav > ol > li:nth-of-type(3) > p > a {
+    outline: 8px ridge rgba(250, 2, 2, 0.986);
+    border: none;
+    margin-inline-start: 0.5rem;
+    margin-inline-end: 0.5rem;
+    }
+    nav > ol > li:nth-of-type(4) > p > a {
+    filter: hue-rotate(90deg);
+    }
+    nav > ol > li:nth-of-type(8) > p a:nth-of-type(1):focus {
+      background-color: yellow;
+      color: black;
+    }
+
+    nav > ol > li:nth-of-type(9) > p > a:visited {
+      background-color: red;
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>All the small things that we didn't cover about CSS</h1>
+  </header>
+  <main>
+    <header>
+      <h4>
+        We haven't covered a number of topics that are really good to know, but each one of them probably didn't deserve their own exercise.
+      </h4>
+      <p>
+        So, let's go through as many of the more important but small properties here as we can:
+      </p>
+    </header>
+    <nav>
+      <ol>
+        <li>
+          <p>
+            A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor">cursor</a> Css property sets types of cursor when we over an element with mouse pointer. It gives types of cursor such us help sign, wait, crosshair, not-allowed, zoom-in, and grab depending on what you choose according to the meaning.
+          </p>
+        </li>
+        <li>
+          <p>
+            A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events">pointer-events</a> CSS property sets diffent behaviours or events of a particular graphic element when the pointer is overing it.
+          </p>
+        </li>
+        <li>
+          <p>
+            An <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline">outline</a> CSS property takes care of the edge of an element which behaves like a border and has its longahand properties.
+          </p>
+        </li>
+        <li>
+          <p>
+            A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">filter</a> CSS property applies graphical effects like blur or color shift to an element. It is used to render images, backgrounds, and borderes.
+          </p>
+        </li>
+        <li>
+          <p>
+            An <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/appearance">appearance</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            An <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">object-fit</a> CSS property takes care of how the content of a replaced element'scontents such us an image or video should be resized to fit in its container.
+          </p>
+        </li>
+        <li>
+          <p>
+            A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align">scroll-snap-align</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            When you put a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus">:focus</a> pseudo class on an element, the element which is focused will be triggered when clicking on it, taps or select with keyboards tab key. It only applies to the focused element itself however we can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within">:focus-within</a> if we want select an element which contains a focused element.
+          </p>
+        </li>
+        <li>
+          <p>
+            A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited">:visited</a> pseudo class makes a diference between visited and unvisited element or a link depending on the value of the property that you give to it.
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href=""></a>
+          </p>
+        </li>
+      </ol>
+    </nav>
+  </main>
+</body>
+</html>
