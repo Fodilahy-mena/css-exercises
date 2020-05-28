@@ -30,14 +30,13 @@ body {
 .navigation__container {
   display: flex;
   max-width: var(--container-max-width);
-  justify-content: space-between;
-  align-items: stretch;
-  flex-direction: row;
 }
 
 .navigation__container__list__items {
   list-style: none;
   border-radius: var(--nav-tab-radius-amount);
+  justify-content: stretch;
+  flex-grow: 1;
 }
 
 .navigation__container__list__items--active {
