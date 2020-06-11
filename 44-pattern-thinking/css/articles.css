@@ -39,12 +39,36 @@
 
 /* 1 */
 [data-example="1"] {
-
+  background-color: black;
 }
-
+[data-example="1"] article{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  background-color: white;
+}
+[data-example="1"] > article header {
+  grid-column: 1 / 3;
+}
+[data-example="1"] > article div {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+[data-example="1"] > article footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
 /* 2 */
 [data-example="2"] {
-
+  border: 1rem solid;
+  padding: 0;
+  display: inline;
+}
+[data-example="2"] > article header {
+  margin-block-end: 1rem;
+}
+[data-example="2"] > article div {
+  margin-block-end: 1rem;
 }
 
 /* 3 */
