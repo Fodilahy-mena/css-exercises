@@ -15,8 +15,12 @@
 }
 
 /* 10 */
-[data-example="10"] {
-
+[data-example="10"] > button span {
+  background-image: url(../images/icon_heart.svg);
+  position: relative;
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
 }
 
 /* 11 */

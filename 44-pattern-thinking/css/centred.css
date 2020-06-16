@@ -23,8 +23,12 @@
   justify-content: center;
 }
 /* 5 */
-[data-example="5"] {
-
+[data-example="5"] div{
+  transform: translate(0%, 48%);
+  text-align: center;
+}
+[data-example="5"] > div p{
+  display: inline-block;
 }
 
 /* 6 */
